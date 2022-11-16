@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState, useReducer } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import logger from 'use-reducer-logger';
@@ -9,7 +9,7 @@ const reducer = (state, action) => {
     case 'FETCH_REQUEST':
       return {...state, loading: true};
     case 'FETCH_SUCCESS':
-      return {...state, product: action.payload, loading: false};
+      return {...state, products: action.payload, loading: false};
     case 'FETCH_FAIL':
       return {...state, loading: false, error: action.payload};
     default:
