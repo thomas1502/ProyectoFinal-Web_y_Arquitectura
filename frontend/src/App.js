@@ -4,8 +4,8 @@ import data from './data';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div >
+      <header >
         <a href="/">Store Online S.A.</a>
       </header>
       <main>
