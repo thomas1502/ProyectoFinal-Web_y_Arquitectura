@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Store } from '../Store';
+import { Store } from './Store.js';
 import { Helmet } from 'react-helmet-async';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
