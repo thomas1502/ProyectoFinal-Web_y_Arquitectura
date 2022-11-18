@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import React, { useContext, useEffect, useReducer } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useNavigate } from "react-router-dom";
@@ -8,10 +8,10 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 import { toast } from "react-toastify";
-import { getError } from "./utils";
+import { getError } from "../utils";
 import { Store } from "./Store";
 import CheckoutSteps from "../components/CheckoutSteps";
-import LoadingBox from '../components/LoadingBox';
+import LoadingBox from "../components/LoadingBox";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -46,7 +46,6 @@ export default function PlaceOrderScreen() {
 
   const placeOrderHandler = async () => {
     try {
-      dispatch({ type: "CREATE_REQUEST" });
       dispatch({ type: "CREATE_REQUEST" });
 
       const { data } = await axios.post(
