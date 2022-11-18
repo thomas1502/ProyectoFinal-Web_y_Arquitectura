@@ -1,4 +1,19 @@
+import bcrypt from 'bcryptjs';
 const data = {
+    users:[
+        {
+            name:'Gerson',
+            email:'gerson@gmail.com',
+            password: bcrypt.hashSync('Contra123'),
+            isAdmin: true,
+        },
+        {
+            name:'Thomas',
+            email:'thomas@gmail.com',
+            password: bcrypt.hashSync('Contra123'),
+            isAdmin: false,
+        },
+    ],
     products: [
         {
             // _id: '1',
@@ -12,6 +27,7 @@ const data = {
             rating: 4.5,
             numReviews: 10,
             description: 'High quality shirt',
+            branch: 'Totonicapán',
         },
         {
             // _id: '2',
@@ -25,6 +41,7 @@ const data = {
             rating: 4.5,
             numReviews: 14,
             description: 'High quality product',
+            branch: 'Quetzaltenango',
         },
         {
             // _id: '3',
@@ -38,6 +55,7 @@ const data = {
             rating: 4.5,
             numReviews: 10,
             description: 'High quality product',
+            branch: 'Quiché',
         },
     ],            
 };
