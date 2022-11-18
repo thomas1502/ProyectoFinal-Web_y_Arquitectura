@@ -9,6 +9,9 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Map from "../components/Map";
+
+const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAwnfiwzpAUY0L7HvvwKyiD8Uze9G59XRE`;
 
 export default function CartScreen() {
   const navigate = useNavigate();
@@ -116,6 +119,16 @@ export default function CartScreen() {
                     >
                       Proceed to Checkout
                     </Button>
+                  </div>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <div>
+                  <Map
+                    googleMapURL= {mapURL}
+                    containerElement= {<div style={{height:'400px'}}/>}
+                    mapElement= {<div style={{height:'100%'}}/>}
+                    loadingElement= {<p>Cargando</p>}
+                  />
                   </div>
                 </ListGroup.Item>
               </ListGroup>
