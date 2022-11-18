@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/React-Toastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
@@ -13,7 +13,7 @@ import { useContext } from "react";
 import { Store } from "./screens/Store";
 import CartScreen from './screens/CartScreen';
 import SigninScreen from "./screens/SigninScreen";
-import NavDropdown  from "react-bootstrap";
+import NavDropdown  from "react-bootstrap/NavDropdown";
 
 
 function App() {
