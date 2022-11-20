@@ -95,7 +95,7 @@ function ProductScreen() {
                 numReviews={product.numReviews}
               ></Rating>
             </ListGroup.Item>
-            <ListGroup.Item> Precio : ${product.price}</ListGroup.Item>
+            <ListGroup.Item> Precio : Q. {product.price}</ListGroup.Item>
             <ListGroup.Item>
               Descripción:
               <p>{product.description}</p>
@@ -109,7 +109,7 @@ function ProductScreen() {
                 <ListGroup.Item>
                   <Row>
                     <Col>Precio:</Col>
-                    <Col>${product.price}</Col>
+                    <Col>Q. {product.price}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>

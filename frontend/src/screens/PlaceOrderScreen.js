@@ -85,21 +85,21 @@ export default function PlaceOrderScreen() {
     <div>
       <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
       <Helmet>
-        <title>Detalle Orden</title>
+        <title>Detalle del Pedido</title>
       </Helmet>
-      <h1 className="my-3">Detalle Orden</h1>
+      <h1 className="my-3">Detalle del Pedido</h1>
       <Row>
         <Col md={8}>
           <Card className="mb-3">
             <Card.Body>
-              <Card.Title>Shipping</Card.Title>
+              <Card.Title>Envío</Card.Title>
               <Card.Text>
-                <strong>Name:</strong> {cart.shippingAddress.fullName} <br />
-                <strong>Address: </strong> {cart.shippingAddress.address},
+                <strong>Nombre:</strong> {cart.shippingAddress.fullName} <br />
+                <strong>Dirección: </strong> {cart.shippingAddress.address},
                 {cart.shippingAddress.city}, {cart.shippingAddress.postalCode},
                 {cart.shippingAddress.country}
               </Card.Text>
-              <Link to="/shipping">Edit</Link>
+              <Link to="/shipping">Editar</Link>
             </Card.Body>
           </Card>
 
