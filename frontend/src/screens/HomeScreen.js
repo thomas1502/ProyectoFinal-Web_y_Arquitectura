@@ -7,6 +7,9 @@ import Product from "../components/Product";
 import {Helmet} from 'react-helmet-async';
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
+import giffeliz from "../adorno-navidad-7.gif";
+import giffeliz2 from "../cenefas_15.gif";
+import '../App.css'
 //import data from "../data";
 
 const reducer = (state, action) => {
@@ -50,6 +53,7 @@ function HomeScreen() {
       <Helmet>
         <title>Store Online S.A.</title>
       </Helmet>
+      <img src={giffeliz} className="pequeña"/><img src={giffeliz2}className="normal" /><img src={giffeliz} className="pequeña"/><img src={giffeliz2}className="normal"  /><img src={giffeliz} className="pequeña"/>
       <h1>Productos Destacados</h1>
       <div className="products">
         {loading ? (
