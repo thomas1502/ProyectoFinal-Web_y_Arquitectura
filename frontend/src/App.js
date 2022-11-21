@@ -22,10 +22,10 @@ import OrderScreen from "./screens/OrderScreen";
 import OrderHistoryScreen from "./screens/OrderHistoryScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ProtectedRoute from "./components/ProtectedRouted";
-import DashboardScreen from './screens/DashboardScreen';
-import AdminRoute from './components/AdminRoute';
-import ProductListScreen from './screens/ProductListScreen';
-
+import DashboardScreen from "./screens/DashboardScreen";
+import AdminRoute from "./components/AdminRoute";
+import ProductListScreen from "./screens/ProductListScreen";
+import OrderListScreen from "./screens/OrderListScreen";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -150,7 +150,15 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
-               <Route
+              <Route
+                path="/admin/orders"
+                element={
+                  <AdminRoute>
+                    <OrderListScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+              <Route
                 path="/admin/products"
                 element={
                   <AdminRoute>
