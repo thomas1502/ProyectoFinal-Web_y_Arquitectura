@@ -20,7 +20,7 @@ const data = {
       name: "ROG STRIX SCAR",
       slug: "rog-strix-scar",
       category: "Laptop",
-      image: "/images/p4.jpg", // 679px x 829px
+      image: "/images/p4.png", // 679px x 829px
       price: 22000,
       countInStock: 4,
       brand: "ROG",
@@ -34,7 +34,7 @@ const data = {
       name: "iMac",
       slug: "i-mac",
       category: "Desktop",
-      image: "/images/p5.jpg", // 679px x 829px
+      image: "/images/p5.png", // 679px x 829px
       price: 37500,
       countInStock: 8,
       brand: "Apple",
@@ -48,7 +48,7 @@ const data = {
       name: "Canon Mirrorless",
       slug: "canon-mirrorless",
       category: "Fotografía",
-      image: "/images/p6.jpg", // 679px x 829px
+      image: "/images/p6.png", // 679px x 829px
       price: 15000,
       countInStock: 7,
       brand: "Canon",
@@ -62,7 +62,7 @@ const data = {
       name: "Cámara de seguridad CCTV",
       slug: "camara-seguridad-cctv",
       category: "Cámaras",
-      image: "/images/p7.jpg", // 679px x 829px
+      image: "/images/p7.png", // 679px x 829px
       price: 2999.99,
       countInStock: 10,
       brand: "Hilkvision",
@@ -76,7 +76,7 @@ const data = {
       name: "Apple Watch Ultra",
       slug: "apple-watch-ultra",
       category: "Smart Watch",
-      image: "/images/p8.jpg", // 679px x 829px
+      image: "/images/p8.png", // 679px x 829px
       price: 7500,
       countInStock: 9,
       brand: "Apple",
@@ -90,7 +90,7 @@ const data = {
       name: "iPhone 14 Pro",
       slug: "iphone-14-pro",
       category: "Celulares",
-      image: "/images/p9.jpg", // 679px x 829px
+      image: "/images/p9.png", // 679px x 829px
       price: 40000,
       countInStock: 20,
       brand: "Apple",
@@ -104,7 +104,7 @@ const data = {
       name: "Nokia 3310",
       slug: "nokia-3310",
       category: "Celulares",
-      image: "/images/p10.jpg", // 679px x 829px
+      image: "/images/p10.png", // 679px x 829px
       price: 100,
       countInStock: 4000,
       brand: "Nokia",
@@ -117,7 +117,7 @@ const data = {
       name: "GoPro Hero Black 5",
       slug: "gopro-hero-black-5",
       category: "Cámaras",
-      image: "/images/p11.jpg", // 679px x 829px
+      image: "/images/p11.png", // 679px x 829px
       price: 7000,
       countInStock: 15,
       brand: "GoPro",

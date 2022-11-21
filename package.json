@@ -1,0 +1,22 @@
+{
+  "name": "proyectofinal-web_y_arquitectura",
+  "version": "1.0.0",
+  "description": "ProyectoFinal Programación Web y Arquitectura de Sistemas I",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install  && cd ../frontend && npm install  && npm run build ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas1502/ProyectoFinal-Web_y_Arquitectura.git",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gerson Y Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomas1502/ProyectoFinal-Web_y_Arquitectura/issues"
+  },
+  "homepage": "https://github.com/thomas1502/ProyectoFinal-Web_y_Arquitectura#readme"
+}
