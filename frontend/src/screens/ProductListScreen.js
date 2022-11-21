@@ -53,7 +53,7 @@ export default function ProductListScreen() {
 
   return (
     <div>
-      <h1>Products</h1>
+      <h1>Productos</h1>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
@@ -63,11 +63,11 @@ export default function ProductListScreen() {
           <table className="table">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>PRICE</th>
-                <th>CATEGORY</th>
-                <th>BRAND</th>
+                <th>CODIGO</th>
+                <th>NOMBRE</th>
+                <th>PRECIO</th>
+                <th>CATEGORIA</th>
+                <th>MARCA</th>
               </tr>
             </thead>
             <tbody>

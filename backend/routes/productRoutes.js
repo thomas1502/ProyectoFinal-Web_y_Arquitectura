@@ -1,6 +1,6 @@
 import express from "express";
 import Product from "../models/productModel.js";
-import expressAsyncHandler from "express-async-handler";
+import expressAsyncHandler from "express-async-handler"
 import { isAuth, isAdmin } from '../utils.js';
 
 const productRouter = express.Router();
@@ -10,7 +10,7 @@ productRouter.get('/', async(req, res) => {
     res.send(products);
 });
 
-const PAGE_SIZE = 3;
+const PAGE_SIZE = 5;
 
 productRouter.get(
   '/admin',
