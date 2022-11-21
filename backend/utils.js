@@ -5,12 +5,12 @@ export const generateToken = (user) => {
     {
       _id: user._id,
       name: user.name,
-      emial: user.emial,
+      email: user.email,
       isAdmin: user.isAdmin,
     },
     process.env.JWT_SECRET,
     {
-      expiresIn: "30d",
+      expiresIn: '30d',
     }
   );
 };
@@ -39,3 +39,4 @@ export const isAdmin = (req, res, next) => {
     res.status(401).send({ message: 'Invalid Admin Token' });
   }
 };
+
